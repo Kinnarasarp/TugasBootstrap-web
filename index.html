@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mbutstrep</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: linear-gradient(180deg, #040053, #16002a, #370056);
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    a {
+      font-family: monospace;
+      text-shadow: 2px 1px #2d0047;
+    }
+
+    a:hover {
+      color: #541678 !important;
+    }
+
+    a:active {
+      color: #541678 !important;
+    }
+
+    section {
+      padding-bottom: 150px;
+    }
+
+    nav {
+      background-color: #242424;
+    }
+
+    .color-1 {
+      color: blueviolet;
+    }
+
+    .card {
+      background-color: #040053;
+      transition: transform .05s, box-shadow .2s ease-in-out;
+    }
+
+    .card-contact {
+      background-color: #28014d;
+    }
+
+    .card-about:hover {
+      background-color: #040053;
+      box-shadow: 0px 0px 20px 11px rgba(31, 0, 213, 0.75);
+      -webkit-box-shadow: 0px 0px 20px 11px rgba(31, 0, 213, 0.75);
+      -moz-box-shadow: 0px 0px 20px 11px rgba(31, 0, 213, 0.75);
+      transform: scale(1.07);
+    }
+
+    .pic-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    .gallery-pic {
+      cursor: pointer;
+      transition: transform .2s;
+    }
+
+    .gallery-pic:hover {
+      transform: scale(1.2);
+    }
+
+    .img-contact {
+      width: 80px;
+      margin: auto;
+    }
+  </style>
+  <nav class="navbar sticky-top navbar-expand">
+    <div class="container-fluid p-2 mx-3">
+      <a class="navbar-brand m-0" href="#">
+        <img src="assets/img/r6slogo.png" alt="Logo" width="50" class="d-inline-block align-text-top">
+      </a>
+      <div class="collapse navbar-collapse mx-3">
+        <div class="navbar-nav">
+          <a class="nav-link color-1 fw-bold fs-5 mx-4" href="#">Home</a>
+          <a class="nav-link color-1 fw-bold fs-5 mx-4" href="#about">About</a>
+          <a class="nav-link color-1 fw-bold fs-5 mx-4" href="#gallery">Gallery</a>
+          <a class="nav-link color-1 fw-bold fs-5 mx-4" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <section class="mt-4">
+      <div class="d-flex justify-content-center mb-3">
+        <h2 class="color-1">New Releases</h2>
+      </div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#gallery">
+              <img src="assets/img/wallhaven-k772zd.jpg" class="pic-center shadow rounded" alt="">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#gallery">
+              <img src="assets/img/wallhaven-k72pjd.png" class="pic-center shadow rounded" alt="">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#gallery">
+              <img src="assets/img/wallhaven-6ow696.jpg" class="pic-center shadow rounded" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div id="about"></div>
+      </div>
+    </section>
+
+    <section class="mt-4">
+      <div class="row">
+        <div class="col-6 p-5">
+          <div class="card card-about">
+            <div class="card-body">
+              <h2 class="mb-4 color-1">
+                About Me
+              </h2>
+              <p class="mb-4 color-1">
+                Aku seorang kapiten
+                Mempunyai pedang panjang
+                Kalau berjalan prok prok prok
+                Aku seorang kapiten
+                Aku seorang kapiten
+                Mempunyai pedang panjang
+                Kalau berjalan prok prok prok
+                Aku seorang kapiten
+                Aku seorang kapiten
+                Mempunyai pedang panjang
+                Kalau berjalan prok prok prok
+                Aku seorang kapiten
+                Aku seorang kapiten
+                Mempunyai pedang panjang
+                Kalau berjalan prok prok prok
+                Aku seorang kapiten
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 p-5 d-flex justify-content-center align-items-center">
+          <img src="assets/img/Untitled.jpg" class="w-100 shadow-lg" alt="">
+        </div>
+      </div>
+      <div id="gallery"></div>
+    </section>
+
+    <section class="mt-4">
+      <div class="d-flex justify-content-center mb-3">
+        <h2 class="color-1">Gallery</h2>
+      </div>
+      <div class="row mx-5">
+        <div class="col-3 mb-3">
+          <img src="assets/img/wallhaven-k72pjd.png" class="gallery-pic w-100 shadow rounded" alt="">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="assets/img/wallhaven-k772zd.jpg" class="gallery-pic w-100 shadow rounded" alt="">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="assets/img/wallhaven-2e95xg.jpg" class="gallery-pic w-100 shadow rounded" alt="">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="assets/img/wallhaven-6ow696.jpg" class="gallery-pic w-100 shadow rounded" alt="">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="assets/img/wallhaven-k772zd.jpg" class="gallery-pic w-100 shadow rounded" alt="">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="assets/img/wallhaven-k72pjd.png" class="gallery-pic w-100 shadow rounded" alt="">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="assets/img/wallhaven-6ow696.jpg" class="gallery-pic w-100 shadow rounded" alt="">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="assets/img/wallhaven-2e95xg.jpg" class="gallery-pic w-100 shadow rounded" alt="">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="#gallery" class="color-1">See more...</a>
+        <div id="contact"></div>
+      </div>
+    </section>
+
+    <section class="mt-4">
+      <div class="d-flex justify-content-center mb-5">
+        <h2 class="color-1">Contact Me</h2>
+      </div>
+      <div class="row mx-5">
+        <div class="col-6 mb-3">
+          <div class="card card-contact w-100 h-100 rounded-4 my-5">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <a href="https://www.instagram.com/kinnarasarp/?hl=en" class="d-flex flex-column color-1">
+                <img src="assets/img/instagramlogo.png" class="img-contact mb-3">
+                <p>Instagram Account</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-3">
+          <div class="card card-contact w-100 h-100 rounded-4 my-5">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <a href="https://steamcommunity.com/id/Vretz/" class="d-flex flex-column color-1">
+                <img src="assets/img/steam-logo-transparent.png" class="img-contact mb-3">
+                <p>Steam Account</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
